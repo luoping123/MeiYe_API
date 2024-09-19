@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sct.meiye.mapper.GoodsOrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.sct.meiye.entity.GoodsOrder">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="goodsOrderId" column="goods_order_id" jdbcType="VARCHAR"/>
+            <result property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="openId" column="open_id" jdbcType="VARCHAR"/>
+            <result property="goodsIdList" column="goods_id_list" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="intergralSum" column="intergral_sum" jdbcType="INTEGER"/>
+            <result property="priceSum" column="price_sum" jdbcType="DECIMAL"/>
+            <result property="realPrice" column="real_price" jdbcType="DECIMAL"/>
+            <result property="useCoupon" column="use_coupon" jdbcType="VARCHAR"/>
+            <result property="orderStatus" column="order_status" jdbcType="VARCHAR"/>
+            <result property="payType" column="pay_type" jdbcType="VARCHAR"/>
+            <result property="payTime" column="pay_time" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="VARCHAR"/>
+            <result property="payDeadline" column="pay_deadline" jdbcType="VARCHAR"/>
+            <result property="isOutTime" column="is_out_time" jdbcType="INTEGER"/>
+            <result property="receiverName" column="receiver_name" jdbcType="VARCHAR"/>
+            <result property="receiverAddress" column="receiver_address" jdbcType="VARCHAR"/>
+            <result property="receiverPhone" column="receiver_phone" jdbcType="VARCHAR"/>
+            <result property="postalNumber" column="postal_number" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,goods_order_id,user_id,open_id
+        goods_id_list,remark,intergral_sum,
+        price_sum,real_price,use_coupon,
+        order_status,pay_type,pay_time,
+        create_time,pay_deadline,is_out_time,
+        receiver_name,receiver_address,receiver_phone, postal_number
+    </sql>
+</mapper>

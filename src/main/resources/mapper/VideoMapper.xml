@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sct.meiye.mapper.VideoMapper">
+
+    <resultMap id="BaseResultMap" type="com.sct.meiye.entity.Video">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="videoId" column="video_id" jdbcType="VARCHAR"/>
+            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <result property="href" column="href" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="msg" column="msg" jdbcType="VARCHAR"/>
+            <result property="state" column="state" jdbcType="VARCHAR"/>
+            <result property="isLike" column="is_like" jdbcType="INTEGER"/>
+            <result property="likeN" column="like_n" jdbcType="INTEGER"/>
+            <result property="smsN" column="sms_n" jdbcType="INTEGER"/>
+            <result property="src" column="src" jdbcType="VARCHAR"/>
+            <result property="playnumber" column="playNumber" jdbcType="INTEGER"/>
+            <result property="pinlun" column="pinlun" jdbcType="VARCHAR"/>
+            <result property="playing" column="playIng" jdbcType="TINYINT"/>
+            <result property="isshowimage" column="isShowimage" jdbcType="TINYINT"/>
+            <result property="isshowprogressbartime" column="isShowProgressBarTime" jdbcType="TINYINT"/>
+            <result property="isplay" column="isplay" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,video_id,username,
+        href,title,msg,
+        state,is_like,like_n,
+        sms_n,src,playNumber,
+        pinlun,playIng,isShowimage,
+        isShowProgressBarTime,isplay
+    </sql>
+</mapper>

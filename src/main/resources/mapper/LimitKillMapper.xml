@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sct.meiye.mapper.LimitKillMapper">
+
+    <resultMap id="BaseResultMap" type="com.sct.meiye.entity.LimitKill">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="limitTime" column="limit_time" jdbcType="BIGINT"/>
+            <result property="enable" column="enable" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,limit_time,enable
+    </sql>
+</mapper>

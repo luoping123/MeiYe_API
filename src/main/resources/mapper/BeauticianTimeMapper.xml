@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sct.meiye.mapper.BeauticianTimeMapper">
+
+    <resultMap id="BaseResultMap" type="com.sct.meiye.entity.BeauticianTime">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="beauticianId" column="beautician_id" jdbcType="BIGINT"/>
+            <result property="beauticianTime" column="beautician_time" jdbcType="VARCHAR"/>
+            <result property="number" column="number" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,beautician_id,beautician_time,
+        number
+    </sql>
+</mapper>

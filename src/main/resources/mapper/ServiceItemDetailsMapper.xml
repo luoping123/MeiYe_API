@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sct.meiye.mapper.ServiceItemDetailsMapper">
+
+    <resultMap id="BaseResultMap" type="com.sct.meiye.entity.ServiceItemDetails">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="serviceId" column="service_id" jdbcType="BIGINT"/>
+            <result property="swiperUrl" column="swiper_url" jdbcType="VARCHAR"/>
+            <result property="swiperType" column="swiper_type" jdbcType="VARCHAR"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,service_id,swiper_url,
+        swiper_type,content
+    </sql>
+</mapper>

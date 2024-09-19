@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sct.meiye.mapper.ServiceItemMapper">
+
+    <resultMap id="BaseResultMap" type="com.sct.meiye.entity.ServiceItem">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="subName" column="sub_name" jdbcType="VARCHAR"/>
+            <result property="imageSrc" column="image_src" jdbcType="VARCHAR"/>
+            <result property="olderPrice" column="older_price" jdbcType="DECIMAL"/>
+            <result property="nowPrice" column="now_price" jdbcType="DECIMAL"/>
+            <result property="cateId" column="cate_id" jdbcType="BIGINT"/>
+            <result property="isLimitKill" column="is_limit_kill" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,sub_name,
+        image_src,older_price,now_price,
+        cate_id,is_limit_kill
+    </sql>
+</mapper>

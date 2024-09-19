@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sct.meiye.mapper.GoodsAttributeMapper">
+
+    <resultMap id="BaseResultMap" type="com.sct.meiye.entity.GoodsAttribute">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="goodsId" column="goods_id" jdbcType="BIGINT"/>
+            <result property="attributeName" column="attribute_name" jdbcType="VARCHAR"/>
+            <result property="attributeValue" column="attribute_value" jdbcType="VARCHAR"/>
+            <result property="storeNumber" column="store_number" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,goods_id,attribute_name,
+        attribute_value,store_number
+    </sql>
+</mapper>

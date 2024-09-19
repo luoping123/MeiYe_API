@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sct.meiye.mapper.GoodsMapper">
+
+    <resultMap id="BaseResultMap" type="com.sct.meiye.entity.Goods">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="goodsCateId" column="goods_cate_id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="imageSrc" column="image_src" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="DECIMAL"/>
+            <result property="olderPrice" column="older_price" jdbcType="DECIMAL"/>
+            <result property="intergralValue" column="intergral_value" jdbcType="INTEGER"/>
+            <result property="storeNumber" column="store_number" jdbcType="INTEGER"/>
+            <result property="hotNumber" column="hot_number" jdbcType="INTEGER"/>
+            <result property="goodsColor" column="goods_color" jdbcType="VARCHAR"/>
+            <result property="goodsSize" column="goods_size" jdbcType="VARCHAR"/>
+            <result property="goodsNum" column="goods_num" jdbcType="INTEGER"/>
+            <result property="isLimitKill" column="is_limit_kill" jdbcType="TINYINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isIntegralExchange" column="is_integral_exchange" jdbcType="INTEGER"/>
+            <result property="integral" column="integral" jdbcType="INTEGER"/>
+
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,goods_cate_id,name,
+        image_src,price,older_price,intergral_value,store_number,
+        hot_number,goods_color,goods_size,goods_num,
+        is_limit_kill,create_time,update_time,
+        is_integral_exchange,integral
+    </sql>
+</mapper>
